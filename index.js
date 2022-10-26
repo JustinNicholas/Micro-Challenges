@@ -31,3 +31,30 @@ console.log('sorted', newArr);
 
 let reverseOrder = arr.sort((a,b) => b-a);
 console.log('reverse', reverseOrder);
+
+
+// converting objects to arrays
+
+toArray({ a: 1, b: 2 })
+// ➞ [["a", 1], ["b", 2]]
+
+toArray({ shrimp: 15, tots: 12 })
+// ➞ [["shrimp", 15], ["tots", 12]]
+
+//toArray({})
+// ➞ []
+
+function toArray(obj) {
+    // let keys = Object.keys(obj)
+    // let values = Object.values(obj)
+    // console.log(values);
+    // console.log(keys);
+
+    console.log(Object.entries(obj));
+
+    // let combArray = []
+    // for( let i=0; i<keys.length; i++) {
+    //     combArray.push([keys[i] + ':' + values[i] ])
+    // }
+    // console.log(combArray);
+}
